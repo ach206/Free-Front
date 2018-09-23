@@ -23,10 +23,10 @@ const VolunteerSignup = () => (
           <Input name='Vehicle' type='checkbox' value='Helicopter' label='Helicopter' className='filled-in' />
         </Row>
         <Row>
-          <Input name='Training' type='checkbox' value='Emergency Medical' label='Emergency Medical' className='filled-in' />
-          <Input name='Training' type='checkbox' value='Military (Ret.)' label='Military (Ret.)' className='filled-in'  />
           <Input name='Training' type='checkbox' value='Police (Ret.)' label='Police (Ret.)' className='filled-in' defaultChecked='checked' />
+          <Input name='Training' type='checkbox' value='Military (Ret.)' label='Military (Ret.)' className='filled-in'  />
           <Input name='Training' type='checkbox' value='Firefighter (Ret.)' label='Firefighter (Ret.)' className='filled-in' />
+          <Input name='Training' type='checkbox' value='Emergency Medical' label='Emergency Medical' className='filled-in' />
         </Row>
         <Row>
             <Input s={12} type='textarea' label='Other skills or training' />

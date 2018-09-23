@@ -9,7 +9,7 @@ import logo from '../Assets/BL-Navy.png'
 
 import {Col, Row, Modal, Button, Navbar, Badge, NavItem} from 'react-materialize'
 
-let image = <div><img src={logo} alt="navy logo"/><p className="free" >FREE RESPONDER</p></div>
+let image = <div className="valign-wrapper"><img src={logo} alt="navy logo"/><div ><p className="free" >FREE RESPONDER</p></div></div>
 
 const HeaderNav = ({authState, signupModal, loginModal}) => (
     <Navbar id="navMenu" brand={image} right>
