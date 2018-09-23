@@ -5,13 +5,14 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import { withAuthentication } from '../Helpers'
+import ArcGIS from '../Components/ArcGIS'
 
 class Home extends Component {
 
   render() {
     return(
       <div>
-        Hello World
+        <ArcGIS />
       </div>
     )
   }
