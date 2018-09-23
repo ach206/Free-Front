@@ -4,8 +4,9 @@ import { bindActionCreators } from 'redux'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import { request, AuthenticationService } from '../Helpers'
-import Navbar from '../Components/Navbar'
+import HeaderNav from '../Components/HeaderNav'
 import Footer from '../Components/Footer'
+import VolunteerSignup from '../Components/volunteerComponents/VolunteerSignup'
 
 import Home from './Home'
 
@@ -16,14 +17,15 @@ class App extends Component {
   render(){
     return (
       <div>
-        <Navbar />
-        <BrowserRouter>
+        <HeaderNav />
+        <VolunteerSignup />
+        {/* <BrowserRouter>
           <div>
             <Switch>
               <Route exact path='/' component={ Home } />
             </Switch>
           </div>
-        </BrowserRouter>
+        </BrowserRouter> */}
         <Footer />
       </div>
     )
