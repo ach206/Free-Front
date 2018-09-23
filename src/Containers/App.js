@@ -4,6 +4,8 @@ import { bindActionCreators } from 'redux'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import { request, AuthenticationService } from '../Helpers'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 import Home from './Home'
 
@@ -14,6 +16,7 @@ class App extends Component {
   render(){
     return (
       <div>
+        <Navbar />
         <BrowserRouter>
           <div>
             <Switch>
@@ -21,6 +24,7 @@ class App extends Component {
             </Switch>
           </div>
         </BrowserRouter>
+        <Footer />
       </div>
     )
   }
