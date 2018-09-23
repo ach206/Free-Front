@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
   height: 150px;
@@ -25,4 +20,89 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+
+body, .mainContainer {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+
+ul, ol {
+  list-style: none;
+}
+
+h2, h3, h5 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*-------------navigation--------*/
+
+.navContainer {
+  width: 100vw;
+}
+nav {
+    background: #f4f4f0;
+    min-height: 80px;
+}
+
+.navMenu a {
+    text-align: right;
+    border: 2px solid;
+    padding: .2em;
+    border-radius: 5px;
+    color: rgb(39, 41, 39);
+    line-height: .5em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#navMenu img {
+    min-height: 84px;
+    max-height: 84px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+li.navMenu {
+    padding: 0 .8em;
+    line-height: 2em;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    position: absolute;
+    left: 90%;
+    margin-top: 5px;
+}
+
+nav ul {
+    /* display: -webkit-box; */
+    /* display: -ms-flexbox; */
+    /* display: flex; */
+    /* -ms-flex-direction: row-reverse; */
+    /* -ms-flex-align: center; */
+    /* margin: 0; */
+}
+
+#logon {
+  background-color: rgb(10, 55, 130);
+}
+
+.free {
+  margin-left: 120px;
+  color: rgb(10, 55, 130);
+  margin-top: 13px;
+  margin-bottom: 0px;
 }
