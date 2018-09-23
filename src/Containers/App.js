@@ -6,7 +6,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { request, AuthenticationService } from '../Helpers'
 import HeaderNav from '../Components/HeaderNav'
 import Footer from '../Components/Footer'
-import VolunteerSignup from '../Components/volunteerComponents/VolunteerSignup'
+import VolunteerSignupConfirmation from '../Components/volunteerComponents/VolunteerSignupConfirmation'
+import VictimForm from '../Components/victimComponents/VictimForm'
 
 import Home from './Home'
 
@@ -18,7 +19,7 @@ class App extends Component {
     return (
       <div>
         <HeaderNav />
-        <VolunteerSignup />
+        <VictimForm/>
         {/* <BrowserRouter>
           <div>
             <Switch>

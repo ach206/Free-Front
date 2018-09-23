@@ -13,7 +13,7 @@ let image = <div className="valign-wrapper"><img src={logo} alt="navy logo"/><di
 
 const HeaderNav = ({authState, signupModal, loginModal}) => (
     <Navbar id="navMenu" brand={image} right>
-      <NavItem><Button id="logon" className="navMenu">LOGIN</Button></NavItem>
+      <NavItem ><Button id="logon" className="navMenu">LOGIN</Button></NavItem>
     </Navbar>
 )
 
