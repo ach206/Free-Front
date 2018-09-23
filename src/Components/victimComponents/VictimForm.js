@@ -13,7 +13,7 @@ const VictimForm = () => (
     <Col s={12}>
       <Container>
         <Row>
-          <h3>What Type of Help Do You Need</h3>
+          <h4>What Type of Help Do You Need</h4>
           <Row>
             <Input name='EmergencyType' type='radio' label='Request medical' value='medical' />
             <Input name='EmergencyType' type='radio' label='Evacuation Information' value='evacuation' />
@@ -21,7 +21,7 @@ const VictimForm = () => (
             <Input name='EmergencyType' type='radio' label='Find a shelter' value='shelter'/>
             <Input name='EmergencyType' type='radio' label='Report other emergencies' value='report'/>
           </Row>
-          <h3>Type of Medical Request</h3>
+          <h4>Type of Medical Request</h4>
           <Row>
           <p>Is the person seeking medical attention breathing?</p>
           <Input name='EmergencyType' type='radio' label='Yes' value='breathing' />
@@ -52,7 +52,7 @@ const VictimForm = () => (
               <Input type="textarea" label="Additional" placeholder="Other relevant details" s={12} />
           </Row>
         </Row>
-        <h3>Request Rescue</h3>
+        <h4>Request Rescue</h4>
         <p><b>Tips for rescue:</b> Get to high sturdy structures. If possible, use
           bright colorful objects to identify yourself.
           Make sure your phone ringer volume is loud
@@ -63,13 +63,13 @@ const VictimForm = () => (
           <Input label="Address" s={12} />
           <Input type="textarea" label="Additional" placeholder="Other relevant details" s={12} />
 
-          <Collection header='Find a Shelter'>
+          <Collection header='Find a Shelter' id="collections">
           <CollectionItem>Hope Hospital 123 Broadway St, New Orleans, Louisiana 02846</CollectionItem>
           <CollectionItem>YMCA 4 Seymour St, New Orleans, Louisiana 02846</CollectionItem>
           <CollectionItem>Valley View Elementary 8 Valley View Rd, New Orleans, Louisiana 02546</CollectionItem>
           <CollectionItem>Ravens Stadium 123 Memorial Dr, New Orleans, Louisiana 02846</CollectionItem>
           </Collection>
-          <h3>Report Other Emergencies</h3>
+          <h4>Report Other Emergencies</h4>
         </Row>
         <Row>
           <Input name=' Report' type='checkbox' value='Fire' label='Fire' className='filled-in' />
